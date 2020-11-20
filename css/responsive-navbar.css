@@ -1,0 +1,96 @@
+.nav-bar{
+    background-color: rgba(254, 250, 224, 0.9);
+    height: 80px;
+    width: 100%;
+    padding: 20px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    z-index: 1;
+}
+
+.logo{
+    color: #191919;
+    margin-left: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 280px;
+}
+
+.nav-bar ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar ul li{
+    line-height: 80px;
+    margin: 0 20px;
+}
+
+.nav-bar ul li a{
+    color: #595959;
+    font-size: 15px;
+    border-radius: 10px;
+    position: relative;
+}
+
+/* Animated navbar icons */
+.nav-bar ul li a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #595959;
+    
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.25s ease-in;
+}
+
+.nav-bar ul li a:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* Menu button styling */
+.menu-btn{
+    display: none;
+    margin-right: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.line1, .line2, .line3{
+    width: 30px;
+    height: 3px;
+    border-radius: 5px;
+    background-color: #595959;
+    margin: 7px 0;
+    transition: 0.5s;
+}
+
+/* Animate menu button lines */
+.change .line1{
+    -webkit-transform: rotate(-45deg) translate(-7px, 7px);
+    transform: rotate(-45deg) translate(-7px, 7px);
+}
+
+.change .line2{
+    opacity: 0;
+}
+
+.change .line3{
+    -webkit-transform: rotate(45deg) translate(-7px, -7px);
+    transform: rotate(45deg) translate(-7px, -7px);
+}
+
