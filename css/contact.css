@@ -23,9 +23,13 @@
     background-color:#e0e0e0;
 }
 
-.contact-info h3, .contact-info ul {
+.contact-info h3 {
     text-align: center;
-    /* margin: 0 0 1rem 0; */
+}
+
+.contact-info ul {
+    text-align: center;
+    font-size: 15px;
 }
 
 .contact-message {
@@ -36,6 +40,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
+    font-size: 15px;
 }
 
 /* .contact-message form label {
