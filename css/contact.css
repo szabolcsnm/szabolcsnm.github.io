@@ -10,8 +10,15 @@
     padding-top: 70px;
     padding-bottom: 70px;
     margin: auto;
-    font-size: 40px;
+    text-align: center;
+    line-height: 1em;
 }
+
+/* Cursor animation for Typewriting effect */
+.txt-type > .txt {
+    border-right: 1px solid #777;
+} 
+
 
 .wrapper {
     display: grid;

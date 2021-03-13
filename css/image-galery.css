@@ -57,7 +57,6 @@
 
 .galery-item:hover .overlay {
     opacity: 1;
-    /* animation: move-up 0.5s linear; */
 }
 
 .galery-item .text {
